@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css">
+    <link rel="stylesheet" href="css/find-style.css?v=1.8">
+    <link rel="stylesheet" href="icons/css/font-awesome.min.css">
+    <title>Social World</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <span>Social World</span>
+        </div>
+        <ul class="nav-items">
+            <li class="nav-item"><a href="index.html">Domov</a></li>
+            <li class="nav-item"><a href="#about">O nás</a></li>
+            <li class="nav-item"><a href="find.html">Ponuky</a></li>
+            <li class="nav-item"><a href="contact.html">Kontakty</a></li>
+        </ul>
+        <div class="authorize">
+            <div class="authorize-buttons">
+                <a href="login.html" class="home-login-button">Log In</a>
+            </div>
+            <div class="user-profile">
+            </div>
+        </div>
+        <div class="burger">
+            <span class="line"></span>
+        </div>
+    </nav>
+    <div class="change-lan">
+        <a href="index.html">sk</a>
+        <a href="./pages-en/index.html">en</a>
+        <a href="./pages-de/index.html">de</a>
+    </div>
+</header>
+<main>
+    <aside class="find-filter">
+        <form class="find-filter-form">
+            <div class="find-filter-main">
+                <div class="location">
+                    <input type="text" id="location" placeholder="Uveďte lokalitu">
+                    <i class="fa fa-search"></i>
+                </div>
+                <button class="toggle-filter-extended" id="toggle-filter">...</button>
+            </div>
+            <div class="find-filter-extended">
+                <p class="default-paragraph">Platenie</p>
+                <div class="filter-payment" id="payment-slider"></div>
+                <div class="filter-payment-block">
+                    <label for="payment-min">Min eur/hod</label>
+                    <input type="number" min="0" max="20" id="payment-min" class="payment-value">
+                </div>
+                <div class="filter-payment-block">
+                    <label for="payment-max">Max eur/hod</label>
+                    <input type="number" min="0" max="20" id="payment-max" class="payment-value">
+                </div>
+                <button type="submit" class="default-button">Porvrdiť</button>
+            </div>
+        </form>
+    </aside>
+    <div id="map"></div>
+    <section class="find">
+        <div class="find-buttons">
+            <button class="find-button default-button-2" id="find-need-help">Potrebujem pomoc</button>
+            <button class="find-button default-button-2" id="find-want-help">Ponúkam pomoc</button>
+        </div>
+        <div class="offers">
+        </div>
+        <div class="pagination">
+            <a href="#" class="pagination-item-active">1</a>
+            <a href="#" class="pagination-item">2</a>
+            <a href="#" class="pagination-item pagination-arrow"><i class="fa fa-arrow-right"></i></a>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="info">
+            <div class="logo-footer">
+                <img src="img/logo-high-res.png" alt="Error loading image">
+            </div>
+            <div class="contacts-footer">
+                <p class="phone default-paragraph"><i class="fa fa-phone"></i> +421915853693</p>
+                <p class="email default-paragraph"><i class="fa fa-envelope"></i> radoslav.kozlov@gmail.com</p>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com" class="icon"><img src="./icons/svg/facebook.svg" alt="facebook icon"></a>
+                <a href="https://www.instagram.com" class="icon"><img src="./icons/svg/instagram.svg" alt="instagram icon"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
+<script src="js/find.js"></script>
+</body>
+</html>
