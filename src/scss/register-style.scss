@@ -1,0 +1,161 @@
+@import 'partials/style.scss';
+
+h1, h2 {
+    padding: 10px 0;
+}
+
+.container {
+    padding: 30px 10px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.register-section {
+    position: relative;
+    box-shadow: 0 0 25px #b4b4b4;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 550px;
+}
+
+.register-section .default-heading {
+    text-shadow: 1px 1px 0 #545454;
+}
+
+.register-section p {
+    text-align: center;
+}
+
+.controls a {
+    color: #71b8d7;
+    font-size: .8rem;
+    transition: .3s ease;
+    padding: 0 4px;
+}
+
+.controls i {
+    font-size: 1.2rem;
+}
+
+.controls a:hover {
+    color: #ec536c;
+}
+
+.register-form {
+    max-width: 100%;
+    min-width: 200px;
+    padding: 10px 30px;
+    text-align: center;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+}
+
+.register-buttons {
+    text-align: center;
+    display: flex;
+}
+
+.register-button {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.register-form input, .register-form textarea {
+    display: block;
+    margin: 10px auto;
+    max-width: 550px;
+    width: 100%;
+    padding: 10px;
+    font-size: .85rem;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: 0 0 10px #a4a4a4;
+    border-radius: 20px;
+}
+
+.register-form input:focus {
+    border: 2px solid #ec536c;
+}
+
+.register-form label {
+    display: block;
+    margin: 10px 0;
+    color: #000;
+}
+
+.reset-pass {
+    text-align: left;
+    display: block;
+    font-size: .7rem;
+    font-weight: bold;
+    color: #ec536c;
+    padding: 5px 0;
+    transition: .3s ease;
+}
+
+.reset-pass:hover {
+    color: #000;
+}
+
+.third-party-register {
+    margin-top: 15px;
+}
+
+.third-party-register i {
+    padding: 0 5px;
+}
+
+.third-party-register h5 {
+    margin-bottom: 16px;
+}
+
+.google-register, .facebook-register {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 17px;
+    padding: 12px 0;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 10px #a4a4a4;
+    transition: .3s ease;
+}
+
+.google-register:hover {
+    color: #ec536c;
+    box-shadow: 0 0 10px #ec536c;
+}
+
+.facebook-register:hover {
+    color: #3b5998;
+    box-shadow: 0 0 10px #3b5998;
+}
+
+.register-register {
+    padding: 7px;
+    border-top: 1px solid #d4d4d4;
+    text-align: center;
+}
+
+.register-register a {
+    color: #ec536c;
+    text-decoration: underline;
+    font-size: .9rem;
+    transition: .3s ease;
+}
+
+.register-register a:hover {
+    color: #000;
+}
+
+#passport-number {
+    text-transform: uppercase;
+}

@@ -1,0 +1,149 @@
+@import 'partials/style.scss';
+
+h1, h2 {
+    padding: 10px 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.login-section {
+    position: relative;
+    box-shadow: 0 0 25px #b4b4b4;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 450px;
+
+    .default-heading {
+        text-shadow: 1px 1px 0 $dark-grey;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.controls {
+    a {
+        color: $blue;
+        font-size: .8rem;
+        transition: .3s ease;
+        padding: 0 4px;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    i {
+        font-size: 1.2rem;
+    }
+}
+
+.login-form {
+    max-width: 400px;
+    min-width: 200px;
+    padding: 10px 30px;
+    text-align: center;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+
+    input {
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        padding: 10px;
+        font-size: .85rem;
+        border: 2px solid transparent;
+        outline: none;
+        box-shadow: 0 0 10px #a4a4a4;
+        border-radius: 20px;
+
+        &:focus {
+            border: 2px solid $red;
+        }
+    }
+
+    label {
+        display: block;
+        margin: 10px 0;
+        color: #000;
+    }
+}
+
+.reset-pass {
+    text-align: left;
+    display: block;
+    font-size: .7rem;
+    font-weight: bold;
+    color: $red;
+    padding: 5px 0;
+    transition: .3s ease;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+.third-party-login {
+    margin-top: 15px;
+
+    i {
+        padding: 0 5px;
+    }
+
+    h5 {
+        margin-bottom: 16px;
+    }
+}
+
+.google-login, .facebook-login {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 17px;
+    padding: 12px 0;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 10px #a4a4a4;
+    transition: .3s ease;
+}
+
+.google-login {
+    &:hover {
+        color: $red;
+        box-shadow: 0 0 10px $red;
+    }
+}
+
+.facebook-login {
+    &:hover {
+        color: #3b5998;
+        box-shadow: 0 0 10px #3b5998;
+    }
+}
+
+.login-register {
+    padding: 7px;
+    border-top: 1px solid #d4d4d4;
+    text-align: center;
+
+    a {
+        color: #ec536c;
+        text-decoration: underline;
+        font-size: .9rem;
+        transition: .3s ease;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}

@@ -1,0 +1,157 @@
+@import 'partials/style.scss';
+
+.contact-container {
+    max-width: 1150px;
+}
+
+.contacts {
+    padding: 20px 0;
+}
+
+.contact-plates {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-auto-rows: 1fr;
+    grid-row-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-plate {
+    position: relative;
+    background: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 20px;
+
+    .icon {
+        font-size: 60px;
+        color: $red;
+    }
+
+    &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        left: 0;
+        top: 0;
+        box-shadow: 0 0 25px #b4b4b4;
+    }
+}
+
+.grid-item-1, .grid-item-2 {
+    align-self: end;
+}
+
+.grid-item-3, .grid-item-4 {
+    align-self: start;
+}
+
+.contact-name {
+    font-size: .9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.contact-content {
+    font-size: .9rem;
+}
+
+.contact-form {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+
+    input,  textarea {
+        min-width: 70%;
+        padding: 10px;
+        font-size: .85rem;
+        border: none;
+        outline: none;
+        box-shadow: 0 0 7px #d4d4d4;
+    }
+
+    input:focus, textarea:focus {
+        outline: 2px solid #ec536c;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0;
+        color: #fff;
+    }
+
+    textarea {
+        max-width: 100%;
+        min-height: 120px;
+    }
+
+    button {
+        display: block;
+        margin: 25px auto 0;
+        min-width: 70%;
+    }
+}
+
+.map {
+    padding: 15px 0;
+    width: 80%;
+    height: 65vh;
+    margin: 20px auto 0;
+}
+
+@media screen and (max-width: 960px) {
+    .contacts {
+        padding: 20px;
+        display: block;
+    }
+    
+    .contact-plates {
+        grid-template-columns: repeat(2, 1fr);
+        transform: translate(0, 0);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-plates {
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contacts {
+        padding: 0 0 20px;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .contact-form {
+        input, textarea {
+            min-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-plates {
+        display: block;
+    }
+
+    .contact-plate {
+        margin: 15px auto;
+        max-width: 300px;
+    }
+}

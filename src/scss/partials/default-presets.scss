@@ -1,0 +1,231 @@
+$blue: #71b8d7;
+$dark-blue: #307fa1;
+$red: #ec536c;
+$dark-red: #bd223c;
+$dark: #212121;
+$dark-grey: #545454;
+$light-grey: #e1e1e1;
+
+.bg-gradient-blue {
+    background: linear-gradient(120deg, rgba(103, 184, 215, .15) 0%, rgba(255,255,255,.5) 100%);
+}
+
+.bg-gradient-blue-yellow {
+    background: linear-gradient(120deg, rgba(103, 184, 215, .15) 0%, rgba(255, 255, 0, .1) 100%);
+}
+
+.bg-gradient-red {
+    background: rgba(236, 83, 108, .02);
+}
+
+.bg-gradient-blue-top {
+    background: linear-gradient(180deg, rgba(103, 184, 215, .15) 0%, rgba(255,255,255,.5) 100%);
+}
+
+.bg-blue {
+    background: #515152;
+}
+
+.bg-red {
+    background: rgb(236, 83, 108);
+}
+
+.bg-dark {
+    background: #212121;
+}
+
+.bg-grey {
+    background: #d7d7d7;
+}
+
+.color-red {
+    color: #ec536c;
+}
+
+.default-button, .default-button-dark {
+    color: $dark;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: .85rem;
+    padding: .6em 1.3em;
+    border: 2px solid $red;
+    border-radius: 2em;
+    transition: .2s ease;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: #ec536c;
+    }
+}
+
+.default-button-dark {
+    color: #fff;
+    background-color: $dark;
+}
+
+.default-button-dark:hover {
+    color: $dark;
+    background-color: $red;
+}
+
+.default-button-2 {
+    color: #fff;
+    font-size: .9rem;
+    font-weight: bold;
+    position: relative;
+    padding: 8px 14px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+
+    &:before, &:after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        position: absolute;
+        transition: .3s;
+    }
+
+    &:before {
+        background: $dark;
+    }
+
+    &:after {
+        background: $red;
+        width: 0;
+    }
+
+    &:hover:before {
+        width: 0;
+    }
+    
+    &:hover:after {
+        width: 100%;
+    }
+
+    &-active {
+        color: #fff;
+    }
+    
+    &-active:before {
+        background: $red;
+    }
+    
+    &-active:hover:before {
+        width: 100%;
+    }
+    
+    &-active:hover:after {
+        width: 0;
+    }
+}
+
+.default-heading {
+    color: $red;
+    text-shadow: 1px 1px 0 $dark-grey;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    &-dark {
+        color: $dark-grey;
+        text-shadow: 1px 1px 0 $red;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+}
+
+.default-paragraph {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #000;
+
+    &-light {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #fff;        
+    }
+}
+
+.default-popup {
+    position: fixed;
+    max-width: 400px;
+    z-index: 100;
+    top: -100%;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+    background: #fff;
+    border-radius: 20px;
+    animation: popupAnimation 1.45s ease-out .5s forwards;
+
+    &-container {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            background: rgba(0, 0, 0, .4);
+            position: absolute;
+        }
+    }
+
+    p {
+        font-size: .85rem;
+        font-weight: 500;
+        padding: 5px 0;
+    }
+}
+
+.close-popup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+
+    span {
+        position: absolute;
+        width: 85%;
+        height: 5px;
+        top: 50%;
+        left: 50%;
+        background: #ec536c;
+
+        &:first-child {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &:last-child {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+}
+
+@keyframes popupAnimation {
+    0% {
+        top: -100%;
+        opacity: 0;
+    }
+    100% {
+        top: 119px;
+        opacity: 100%;
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "socialworlddesign",
+  "version": "1.0.0",
+  "description": "Design prototype of Social World web application",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToSocialWorld/SocialWorldDesign.git"
+  },
+  "author": "Vitalii Tsimbolynets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ToSocialWorld/SocialWorldDesign/issues"
+  },
+  "homepage": "https://github.com/ToSocialWorld/SocialWorldDesign#readme",
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.12.2",
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.38.0",
+    "webpack-stream": "^6.1.2"
+  }
+}

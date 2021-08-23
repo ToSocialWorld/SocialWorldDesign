@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../icons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/contact-style.css">
+    <title>Social World</title>
+</head>
+<body>
+@@include('./includes/_header.html')
+<main class="bg-gradient-red">
+    <article class="contact-container">
+        <h1 class="default-heading">Our contacts</h1>
+        <div class="contacts">
+            <div class="contact-plates">
+                <div class="contact-plate grid-item-1">
+                    <i class="fa fa-phone icon"></i>
+                    <p class="contact-name">Phone number</p>
+                    <p class="contact-content">+421915853693</p>
+                </div>
+                <div class="contact-plate grid-item-2">
+                    <i class="fa fa-envelope icon"></i>
+                    <p class="contact-name">E-mail</p>
+                    <p class="contact-content">radoslav.kozlov@gmail.com</p>
+                </div>
+                <div class="contact-plate grid-item-3">
+                    <i class="fa fa-fax icon"></i>
+                    <p class="contact-name">Fax number</p>
+                    <p class="contact-content">+100-4001-300</p>
+                </div>
+                <div class="contact-plate grid-item-4">
+                    <i class="fa fa-map-marker icon"></i>
+                    <p class="contact-name">Address</p>
+                    <p class="contact-content">Košice, st. Street 55</p>
+                </div>
+            </div>
+            <form class="contact-form bg-blue">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Enter your e-mail">
+                <label for="opinion">Write your message here</label>
+                <textarea name="opinion" id="opinion"></textarea>
+                <button type="submit" class="default-button">Submit</button>
+            </form>
+        </div>
+        <h2 class="default-heading">Our organization on the map</h2>
+        <div class="map" id="map"></div>
+    </article>
+</main>
+@@include('./includes/_footer.html')
+<script src="../js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register-style.css">
+    <link rel="stylesheet" href="icons/css/font-awesome.min.css">
+    <title>Social World</title>
+</head>
+<body>
+<main class="container">
+    <section class="register-section">
+        <div class="controls">
+            <a href="javascript:history.back()" id="register-back"><i class="fa fa-arrow-left"></i> Go back</a>
+            <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        </div>
+        <h2 class="default-heading">Sign In</h2>
+        <div class="register-buttons">
+            <button class="register-button default-button-2 default-button-2-active">I need help</button>
+            <button class="register-button default-button-2">I offer help</button>
+        </div>
+        <form action="" class="register-form">
+            <label for="email" class="default-paragraph">Email</label>
+            <input type="email" id="email" required>
+            <label for="pass" class="default-paragraph">Password</label>
+            <input type="password" id="pass" placeholder="8-16 symbols" required>
+            <label for="pass-second" class="default-paragraph">Reenter password</label>
+            <input type="password" id="pass-second" placeholder="8-16 symbols" required>
+            <label for="address" class="default-paragraph">Address</label>
+            <input type="text" id="address" required>
+            <label for="user-phone" class="default-paragraph">Phone number</label>
+            <input type="tel" pattern="\d*" maxlength="19" id="user-phone" required>
+            <label for="photo" class="default-paragraph">Upload your photo</label>
+            <input type="file" accept=".png,.jpg" id="photo">
+            <label for="age" class="default-paragraph">Age</label>
+            <input type="number" min="1" max="120" id="age" required>
+            <label for="ident-number" class="default-paragraph">Identification number</label>
+            <input type="text" pattern="\d*" id="ident-number" maxlength="11" placeholder="701124/1234" required>
+            <label for="passport-number" class="default-paragraph">Passport number</label>
+            <input type="text" maxlength="8" id="passport-number" placeholder="EA123456" required>
+            <label for="about-user" class="default-paragraph">Write a few words about you</label>
+            <textarea name="about-user" id="about-user"></textarea>
+            <label for="card-number" class="default-paragraph">Card Number</label>
+            <input type="tel" id="card-number" pattern="\d*" maxlength="19" placeholder="Card Number">
+            <label for="weeks-number" class="default-paragraph">Number of weeks</label>
+            <input type="number" min="1" max="52" id="weeks-number">
+            <button type="submit" class="default-button">Submit</button>
+        </form>
+        <div class="third-party-register">
+            <h5 class="default-heading">Sign In with socials</h5>
+            <button class="google-register"><i class="fa fa-google"></i> Sign In</button>
+            <button class="facebook-register"><i class="fa fa-facebook"></i> Sign In</button>
+        </div>
+    </section>
+</main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/addons/cleave-phone.sk.js"></script>
+<script src="js/register.js"></script>
+</html>
