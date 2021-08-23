@@ -5,7 +5,9 @@ const gulp = require('gulp'),
     webpack = require('webpack-stream'),
     WEBPACK_CONFIG = require('./webpack.config');
 
-const projectFolder = "dist";
+//const projectFolder = "dist";
+//For testing purposes
+const projectFolder = "docs";
 const sources = "src";
 
 const path = {
