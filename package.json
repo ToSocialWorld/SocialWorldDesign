@@ -20,11 +20,16 @@
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.12.2",
     "browser-sync": "^2.27.5",
-    "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-file-include": "^2.3.0",
     "gulp-sass": "^5.0.0",
     "sass": "^1.38.0",
     "webpack-stream": "^6.1.2"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }

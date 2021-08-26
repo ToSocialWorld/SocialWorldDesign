@@ -558,6 +558,7 @@ footer {
 }
 .default-popup .popup-description {
   width: 60%;
+  line-height: 1.5;
 }
 
 .find-in-progress-form {
@@ -566,11 +567,19 @@ footer {
   max-width: 500px;
   margin: auto;
 }
+.find-in-progress-form fieldset {
+  border: none;
+}
 .find-in-progress-form label {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 .find-in-progress-form input {
   margin: 10px auto;
+}
+.find-in-progress-form input[type=checkbox] {
+  transform: scale(1.5);
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .find-in-progress-form input[type=text], .find-in-progress-form input[type=email] {
   display: block;

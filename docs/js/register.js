@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("let userTypeButtons = document.querySelectorAll(\".register-button\");\r\n\r\nArray.from(userTypeButtons).forEach((button, index, buttons) => {\r\n    button.addEventListener(\"click\", event => {\r\n        buttons.forEach(button => button.classList.remove(\"default-button-2-active\"));\r\n\r\n        event.target.classList.add(\"default-button-2-active\");\r\n    });\r\n});\r\n\r\nlet card = new Cleave('#card-number', {\r\n    delimiter: \" \",\r\n    creditCard: true\r\n});\r\n\r\nlet phone = new Cleave('#user-phone', {\r\n    phone: true,\r\n    phoneRegionCode: 'SK',\r\n    prefix: \"+421\"\r\n});\r\n\r\nlet identNumber = new Cleave('#ident-number', {\r\n    delimiter: \"/\",\r\n    blocks: [6, 4]\r\n});\n\n//# sourceURL=webpack:///./src/js/register.js?");
+eval("let userTypeButtons = document.querySelectorAll(\".register-button\");\n\nArray.from(userTypeButtons).forEach((button, index, buttons) => {\n    button.addEventListener(\"click\", event => {\n        buttons.forEach(button => button.classList.remove(\"default-button-2-active\"));\n\n        event.target.classList.add(\"default-button-2-active\");\n    });\n});\n\nlet card = new Cleave('#card-number', {\n    delimiter: \" \",\n    creditCard: true\n});\n\nlet phone = new Cleave('#user-phone', {\n    phone: true,\n    phoneRegionCode: 'SK',\n    prefix: \"+421\"\n});\n\nlet identNumber = new Cleave('#ident-number', {\n    delimiter: \"/\",\n    blocks: [6, 4]\n});\n\n//# sourceURL=webpack:///./src/js/register.js?");
 
 /***/ })
 

@@ -17,6 +17,7 @@
 
     .popup-description {
         width: 60%;
+        line-height: 1.5;
     }
 }
 
@@ -26,12 +27,22 @@
     max-width: 500px;
     margin: auto;
 
+    fieldset {
+        border: none;
+    }
+
     label {
-        font-size: .75rem;
+        font-size: .9rem;
     }
 
     input {
         margin: 10px auto;
+    }
+
+    input[type=checkbox] {
+        transform: scale(1.5);
+        margin-right: 5px;
+        margin-left: 5px;
     }
 
     input[type="text"], input[type="email"] {
