@@ -17,22 +17,22 @@ export default function addFindPopup() {
                     </p>
                 </div>
                 <!-- Begin Mailchimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <form action="https://tosocialworld.us5.list-manage.com/subscribe/post?u=84d98cc7f310a3c6cf2565b3a&amp;id=59a6971af8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                      <div id="mc_embed_signup_scroll">
-                        <input type="email" placeholder="Uveďte email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                <form action="https://tosocialworld.us5.list-manage.com/subscribe/post?u=84d98cc7f310a3c6cf2565b3a&amp;id=59a6971af8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate find-in-progress-form">
+                    <div id="mc_embed_signup_scroll">
+                        <input type="email" placeholder="Uveďte email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
                         <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
-                          <label class="checkbox subfield" for="gdpr_350945"><input type="checkbox" id="gdpr_350945" name="gdpr[350945]" value="Y" class="av-checkbox gdpr"><span>Súhlasím so spracovaním emailu</span> </label>
+                            <label class="checkbox subfield" for="gdpr_350945"><input type="checkbox" id="gdpr_350945" name="gdpr[350945]" value="Y" class="av-checkbox gdpr" required>
+                                <span>Súhlasím so spracovaním emailu</span>
+                            </label>
                         </fieldset>
                         <div id="mce-responses" class="clear">
                             <div class="response" id="mce-error-response" style="display:none"></div>
                             <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_84d98cc7f310a3c6cf2565b3a_59a6971af8" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Odoslať" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                      </div>
-                    </form>
-                </div>
+                        <div class="clear"><input type="submit" value="Odoslať" name="subscribe" id="mc-embedded-subscribe" class="button default-button"></div>
+                    </div>
+                </form>
                 <!--End mc_embed_signup-->
                 <button class="close-popup">
                     <span></span><span></span>
@@ -57,12 +57,24 @@ export default function addFindPopup() {
                             people that we will inform about the launch of the service
                         </p>
                     </div>
-                    <form action="" class="find-in-progress-form">
-                        <input type="email" placeholder="Write your email" required>
-                        <input type="checkbox" id="accept-terms" required>
-                        <label for="accept-terms">I agree with email processing</label>
-                        <button type="submit" class="default-button" id="send-form">Send</button>
+                    <!-- Begin Mailchimp Signup Form -->
+                    <form action="https://tosocialworld.us5.list-manage.com/subscribe/post?u=84d98cc7f310a3c6cf2565b3a&amp;id=59a6971af8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate find-in-progress-form">
+                        <div id="mc_embed_signup_scroll">
+                            <input type="email" placeholder="Write your email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                            <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                                <label class="checkbox subfield" for="gdpr_350945"><input type="checkbox" id="gdpr_350945" name="gdpr[350945]" value="Y" class="av-checkbox gdpr" required>
+                                    <span>I agree with email processing</span>
+                                </label>
+                            </fieldset>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_84d98cc7f310a3c6cf2565b3a_59a6971af8" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Odoslať" name="subscribe" id="mc-embedded-subscribe" class="button default-button"></div>
+                        </div>
                     </form>
+                    <!--End mc_embed_signup-->
                     <button class="close-popup">
                         <span></span><span></span>
                     </button>
@@ -85,12 +97,24 @@ export default function addFindPopup() {
                             Sie werden unter den Ersten sein, die über die Einführung unseres neuen Dienstes informiert werden
                         </p>
                     </div>
-                    <form action="" class="find-in-progress-form">
-                        <input type="email" placeholder="Schreiben Sie Ihre E-Mail" required>
-                        <input type="checkbox" id="accept-terms" required>
-                        <label for="accept-terms">Ich stimme der E-Mail-Verarbeitung zu</label>
-                        <button type="submit" class="default-button" id="send-form">Senden</button>
+                    <!-- Begin Mailchimp Signup Form -->
+                    <form action="https://tosocialworld.us5.list-manage.com/subscribe/post?u=84d98cc7f310a3c6cf2565b3a&amp;id=59a6971af8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate find-in-progress-form">
+                        <div id="mc_embed_signup_scroll">
+                            <input type="email" placeholder="Schreiben Sie Ihre E-Mail" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                            <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                                <label class="checkbox subfield" for="gdpr_350945"><input type="checkbox" id="gdpr_350945" name="gdpr[350945]" value="Y" class="av-checkbox gdpr" required>
+                                    <span>Ich stimme der E-Mail-Verarbeitung zu</span>
+                                </label>
+                            </fieldset>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_84d98cc7f310a3c6cf2565b3a_59a6971af8" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Odoslať" name="subscribe" id="mc-embedded-subscribe" class="button default-button"></div>
+                        </div>
                     </form>
+                    <!--End mc_embed_signup-->
                     <button class="close-popup">
                         <span></span><span></span>
                     </button>
