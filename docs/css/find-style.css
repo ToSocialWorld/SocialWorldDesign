@@ -571,13 +571,13 @@ footer {
   border: none;
 }
 .find-in-progress-form label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .find-in-progress-form input {
   margin: 10px auto;
 }
 .find-in-progress-form input[type=checkbox] {
-  transform: scale(1.5);
+  transform: scale(1.2);
   margin-right: 5px;
   margin-left: 5px;
 }
