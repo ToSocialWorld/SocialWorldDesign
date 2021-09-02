@@ -133,6 +133,13 @@
   color: #fff;
 }
 
+.default-error {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 5px 0;
+}
+
 .default-popup {
   position: fixed;
   max-width: 400px;

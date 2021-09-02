@@ -153,6 +153,13 @@ $light-grey: #e1e1e1;
     }
 }
 
+.default-error {
+    color: red;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
 .default-popup {
     position: fixed;
     max-width: 400px;
