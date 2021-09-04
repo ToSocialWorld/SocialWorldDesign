@@ -50,31 +50,37 @@ map.updateMarkers([{address: {
 
 //PROCESS CONTACT FORM
 let popup = null;
+//mail sending response
+let urlQueryParams = new URLSearchParams(window.location.search);
+let mailStatus = urlQueryParams.get("status");
+if(mailStatus) {
+    popup = new Popup();
+    if(mailStatus === "ok") {
+        popup.setContent(`<p class="contact-popup-text">${currentTextData.email.success}</p>`);
+    } else {
+        popup.setContent(`<p class="contact-popup-text">${currentTextData.email.error}</p>`);
+    }
+    popup.render(document.querySelector("body"));
+}
+
 let contactForm = document.querySelector(".contact-form");
 contactForm.addEventListener("submit", processFormData);
 
 function processFormData(event) {
     event.preventDefault();
     let contactForm = document.querySelector(".contact-form");
-    let contactFormItems = contactForm.elements;
+    contactForm.action = window.location.origin + "/mail.php";
+    contactForm.method = "POST";
 
     if(!validate(contactForm)) return;
-
-    sendEmail(
-        contactFormItems.name.value, 
-        contactFormItems.email.value, 
-        contactFormItems.opinion.value
-    ).then(emailSentSuccessfully => {
-        popup = popup || new Popup();
-        contactForm.reset();
-        if(emailSentSuccessfully) {
-            popup.setContent(`<p class="contact-popup-text">${currentTextData.email.success}</p>`);
-        } else {
-            popup.setContent(`<p class="contact-popup-text">${currentTextData.email.error}</p>`);
-        }
-
-        popup.render(document.querySelector("body"));
-    });
+    let currentHref = document.createElement("input");
+    currentHref.value = window.location.href;
+    currentHref.name = "returnAddress";
+    currentHref.classList.add("hide");
+    contactForm.appendChild(currentHref);
+    contactForm.submit();
+    currentHref.remove();
+    contactForm.reset();
 }
 
 function validate(form) {
@@ -104,24 +110,4 @@ function insertError(parentEl, insertBeforeEl, text) {
         let errors = document.querySelectorAll(".default-error");
         Array.from(errors).forEach(warning => warning.remove());
     };
-}
-
-async function sendEmail(name, email, content) {
-    if(isBlank(email) || isBlank(content)) return false;
-    let body = `Nazor použivateľa: ${content}`;
-    if(!isBlank(name)) {
-        body = `Meno použivateľa: ${name}\n ${body}`;
-    }
-
-    const message = await Email.send({
-        Host: "smtp.gmail.com",
-        Username: "MUST BE SPECIFIED",
-        Password: "MUST BE SPECIFIED",
-        To: "MUST BE SPECIFIED",
-        From: email,
-        Subject: "Použivateľský názor",
-        Body: body
-    });
-
-    return message === "OK";
 }

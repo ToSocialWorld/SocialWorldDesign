@@ -38,9 +38,9 @@
             </div>
             <form class="contact-form bg-blue">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
                 <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="Enter your e-mail">
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail">
                 <label for="opinion">Write your message here</label>
                 <textarea name="opinion" id="opinion"></textarea>
                 <button type="submit" class="default-button">Submit</button>
@@ -52,6 +52,6 @@
 </main>
 @@include('./includes/_footer.html')
 <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="../js/contact.js"></script>
+<script src="../js/contact.js?v=1.2"></script>
 </body>
 </html>
